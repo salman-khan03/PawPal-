@@ -114,7 +114,6 @@ Core scheduling behaviors are well-covered. Not yet tested: empty-pet edge cases
 
 ## 📸 Demo
 
-<!-- Replace with your screenshot after running: streamlit run app.py -->
-<a href="/course_images/ai110/pawpal_screenshot.png" target="_blank">
-  <img src='/course_images/ai110/pawpal_screenshot.png' title='PawPal App' width='' alt='PawPal App' class='center-block' />
+<a href="pawpal_screenshot.png" target="_blank">
+  <img src='pawpal_screenshot.png' title='PawPal App' width='' alt='PawPal App' class='center-block' />
 </a>

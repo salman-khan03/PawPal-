@@ -53,6 +53,8 @@ I used Claude Code (via Claude Code CLI) throughout all phases:
 
 The most effective prompting pattern was specificity: narrow, concrete questions returned immediately usable answers.
 
+Using separate chat sessions for each phase made a real difference for organization. Starting fresh for the algorithmic phase (Phase 4) meant the context window held only the current problem — sorting, filtering, conflict detection — rather than leftover scaffolding discussion from Phase 1. Without that separation, Claude's suggestions tended to anchor on earlier design decisions that were no longer relevant. Fresh sessions also acted as natural checkpoints: before opening a new one, I had to summarize where the system stood, which forced me to consolidate my understanding before generating more code.
+
 **b. Judgment and verification**
 
 When I asked Claude to improve my conflict detection, it suggested a full interval-overlap algorithm that compared `(start_time, start_time + duration_minutes)` ranges for every pair of tasks. It was technically more thorough, but also significantly more complex, harder to test, and prone to false positives for tasks that can legitimately run in parallel. I rejected it and kept the simpler exact-time-match approach, explicitly documenting the tradeoff in the reflection instead of silently leaving a gap in the system.
